@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1>Educational Seminars Survey Form</h1>
+    <p>
+      Thank you for taking the time to express your opinion about educational
+      seminars
+    </p>
+
+    <form>
+      <label
+        >Name
+        <input id="name" type="text" placeholder="Enter your name" required />
+      </label>
+
+      <label
+        >Email
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+
+      <label
+        >Age <span>(optional)</span>
+        <input id="number" type="number" min="18" max="99" placeholder="Age" />
+      </label>
+
+      <label
+        >Employment status
+        <select id="dropdown" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Student</option>
+          <option value="2">Unemployed</option>
+          <option value="3">Public employee</option>
+          <option value="4">Private employee</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+      <label
+        >Have you ever participated in an educational seminar?
+        <label class="radio-checkbox">
+          <input type="radio" name="user-participate" checked />No
+        </label>
+
+        <label class="radio-checkbox">
+          <input type="radio" name="user-participate" />Yes
+        </label>
+      </label>
+
+      <label
+        >How often do you use Internet?
+        <select required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Never</option>
+          <option value="2">Rarely</option>
+          <option value="3">Sometimes</option>
+          <option value="4">Daily</option>
+        </select>
+      </label>
+
+      <label
+        >Which method would you prefer to attend educational seminars?
+        <span>(Check all that apply)</span>
+        <label class="radio-checkbox">
+          <input type="checkbox" value="1" />Face-to-face meetings
+        </label>
+        <label class="radio-checkbox">
+          <input type="checkbox" value="2" />Synchronous e-learning
+        </label>
+        <label class="radio-checkbox">
+          <input type="checkbox" value="3" />Asynchronous e-learning
+        </label>
+      </label>
+
+      <label
+        >Any comments?
+        <textarea placeholder="Enter your comment here..."></textarea>
+      </label>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
