@@ -174,10 +174,6 @@ button:hover {
   body {
     height: 100vh;
     background-attachment: unset;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
   }
   .container {
     width: 90%;
