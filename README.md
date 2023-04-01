@@ -1,3 +1,3 @@
-This is one of the required projects I made to earn my certification in Responsive Web Design: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
+This is one of the required projects to earn my certification in Responsive Web Design: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
 
-Survey for Educational Seminars at https://gakrita.github.io/FreeCodeCamp-Survey_Form/
+Enjoy my survey form for educational seminars at https://gakrita.github.io/FreeCodeCamp-Survey_Form/!!!
