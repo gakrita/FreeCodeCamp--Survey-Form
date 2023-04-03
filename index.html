@@ -8,115 +8,120 @@
     </script>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400"
-    />
+    <link href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" rel="preconnect" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" />
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Survey Form</title>
+    <title>Tribute Page</title>
   </head>
 
   <body>
     <main class="container">
-      <header>
-        <h1 class="title">Educational Seminars Survey Form</h1>
-        <p class="description">
-          Thank you for taking the time to express your opinion about
-          educational seminars
-        </p>
+      <header class="header">
+        <h1 class="title">Tim Berners-Lee</h1>
+        <h3 class="subtitle">The inventor of the World Wide Web (WWW)</h3>
       </header>
 
-      <form>
-        <div class="form-group">
-          <label>Name</label>
-          <input id="name" type="text" placeholder="Enter your name" required />
-        </div>
+      <figure class="img-div">
+        <img class="image" src="images/image.jpg" alt="Tim Berners-Lee in 2012 Olympics opening ceremony" />
+        <figcaption class="img-caption">Sir Tim Berners-Lee live-tweets <i><strong>'This is for everyone'
+          </strong></i> during 2012 Olympics opening ceremony, via a vintage NeXT Computer.</figcaption>
+      </figure>
 
-        <div class="form-group">
-          <label>Email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
+      <section class="tribute-info">
+        <h3 id="headline">Let's see the highlights of TimBL's biography:</h3>
+        <ul class="ul-list">
+          <li>
+            <strong>1955</strong> - Born in London by Mary Lee Woods and Conway Berners-Lee, 
+            computer scientists who worked on the first commercially built computer, 
+            the Ferranti Mark 1
+          </li>
 
-        <div class="form-group">
-          <label>Age <span class="highlight-text">(optional)</span></label>
-          <input
-            id="number"
-            type="number"
-            min="18"
-            max="99"
-            placeholder="Age"
-          />
-        </div>
+          <li>
+            <strong>1969</strong> - Attends Emanuel School in south west London. 
+            As a child, learns about electronics from tinkering with a model railway.
+          </li>
 
-        <div class="form-group">
-          <label>Employment status</label>
-          <select id="dropdown" required>
-            <option value="" disabled selected>Select an option</option>
-            <option value="1">Student</option>
-            <option value="2">Unemployed</option>
-            <option value="3">Public employee</option>
-            <option value="4">Private employee</option>
-            <option value="5">Other</option>
-          </select>
-        </div>
+          <li>
+            <strong>1976</strong> - Graduates from Oxford University receiving 
+            a first-class Bachelor of Arts degree in physics and starts working 
+            as an engineer at the telecommunications company Plessey in Poole, Dorset
+          </li>
 
-        <div class="form-group">
-          <p>Have you ever participated in an educational seminar?</p>
-          <label class="radio-checkbox">
-            <input type="radio" name="user-participate" checked />No
-          </label>
+          <li>
+            <strong>1978</strong> - Joins D. G. Nash in Ferndown, Dorset,
+            helping create typesetting software for printers
+          </li>
 
-          <label class="radio-checkbox">
-            <input type="radio" name="user-participate" />Yes
-          </label>
-        </div>
+          <li>
+            <strong>1980</strong> - Works as an independent contractor at the
+            European Organization for Nuclear Research (CERN) from June to
+            December and then as a technical director at John Poole's Image
+            Computer Systems, Ltd, in Bournemouth, Dorset
+          </li>
 
-        <div class="form-group">
-          <p>How often do you use Internet?</p>
-          <select required>
-            <option value="" disabled selected>Select an option</option>
-            <option value="1">Never</option>
-            <option value="2">Rarely</option>
-            <option value="3">Sometimes</option>
-            <option value="4">Daily</option>
-          </select>
-        </div>
+          <li>
+            <strong>1984</strong> - Returns to CERN as a fellow
+          </li>
 
-        <div class="form-group">
-          <p>
-            Which method would you prefer to attend educational seminars?
-            <span class="highlight-text">(Check all that apply)</span>
-          </p>
-          <label class="radio-checkbox">
-            <input type="checkbox" value="1" />Face-to-face meetings
-          </label>
+          <li>
+            <strong>1989</strong> - Designs and builds the first web browser,
+            the World Wide Web</li>
 
-          <label class="radio-checkbox">
-            <input type="checkbox" value="2" />Synchronous e-learning
-          </label>
+          <li>
+            <strong>1990</strong> - Publishes the first website
+          </li>
 
-          <label class="radio-checkbox">
-            <input type="checkbox" value="3" />Asynchronous e-learning
-          </label>
-        </div>
+          <li>
+            <strong>1994</strong> - Founds the World Wide Web Consortium (W3C)
+            at the Massachusetts Institute of Technology
+          </li>
 
-        <div class="form-group">
-          <p>Any comments?</p>
-          <textarea placeholder="Enter your comment here..."></textarea>
-        </div>
+          <li>
+            <strong>2001</strong> - Becomes a patron of the East Dorset Heritage Trust
+          </li>
 
-        <div class="form-group">
-          <button id="submit">Submit</button>
-        </div>
-      </form>
+          <li>
+            <strong>2004</strong> - Accepts a chair in computer science at the 
+            School of Electronics and Computer Science, University of Southampton, 
+            Hampshire, to work on the Semantic Web
+          </li>
+
+          <li>
+            <strong>2009</strong> - Co-founds the World Wide Web Foundation with
+            his second wife Rosemary Leith, a Canadian Internet and banking entrepreneur
+          </li>
+
+          <li>
+            <strong>2013</strong> - Receives the Queen Elizabeth Prize for Engineering
+          </li>
+
+          <li>
+            <strong>2016</strong> - Joins the Department of Computer Science at
+            Oxford University as a professorial research fellow
+          </li>
+
+          <li>
+            <strong>2017</strong> - Receives the 2016 Turing Award "for
+            inventing the World Wide Web, the first web browser, and the
+            fundamental protocols and algorithms allowing the Web to scale"
+          </li>
+        </ul>
+
+        <blockquote class="blockquote">
+          <p>"I just had to take the hypertext idea and connect it to the TCP 
+            and DNS ideas and—ta-da!—the World Wide Web."</p>
+          <cite>— Tim Berners-Lee</cite>
+        </blockquote>
+
+        <h3>If you wish, you can read more about this innovative man on
+          <a class="tribute-link" href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Wikipedia</a>
+        </h3>
+      </section>
     </main>
   </body>
 </html>
+
