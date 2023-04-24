@@ -27,60 +27,91 @@ body {
   box-sizing: border-box;
 }
 
-header {
+.container {
+  width: 50%;
+  margin: 2.3rem auto 0 auto;
+}
+
+.header {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-form {
+.header__title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  animation: moveInLeft 2.5s ease-out;
+}
+
+.header__description {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
+  animation: moveInRight 2.5s ease-out;
+}
+
+.form {
   padding: 1.3rem 0;
   background-color: rgba(35, 41, 70, 0.8);
   border-radius: 0.2rem;
   animation: moveInBottom 3s ease-out;
 }
 
-label {
+.form__group {
   display: block;
+  width: 85%;
+  margin: 1.3rem auto 0 auto;
+  font-size: 1.2rem;
 }
 
-input,
-select,
-textarea {
+.form__label {
+  display: block;
+  height: 2rem;
+}
+
+.highlight-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
   width: 100%;
   min-height: 2.7rem;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
 
-input,
-select {
+.form__input,
+.form__select {
   border: 0.1rem solid #ced4da;
   border-radius: 4px;
   transition: box-shadow 0.15s ease-in-out;
   padding-left: 0.6rem;
 }
 
-input:focus,
-select:focus {
+.form__input:focus,
+.form__select:focus {
   outline: none;
   box-shadow: 0 0 0.1rem 0.1rem #0632f1;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.form__input[type="radio"],
+.form__input[type="checkbox"] {
   width: 1.3rem;
   margin: 0 0.5rem 0 0;
   vertical-align: middle;
   box-shadow: none;
 }
 
-textarea {
+.form__textarea {
   min-height: 6.7rem;
   padding: 0.7rem 0 0 0.5rem;
   font-family: inherit;
 }
 
-button {
+.btn {
   display: block;
   width: 6.7rem;
   height: 2.7rem;
@@ -95,43 +126,9 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
   background-color: #b8c1ec;
   color: #232946;
-}
-
-.container {
-  max-width: 760px;
-  margin: 2.3rem auto 0 auto;
-}
-
-.title {
-  font-size: 2.2rem;
-  font-weight: 400;
-  animation: moveInLeft 2.5s ease-out;
-}
-
-.description {
-  font-style: italic;
-  font-size: 1.2rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
-  animation: moveInRight 2.5s ease-out;
-}
-
-.form-group {
-  display: block;
-  width: 85%;
-  margin: 1.3rem auto 0 auto;
-  font-size: 1.2rem;
-}
-
-.highlight-text {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.1rem;
-}
-
-.radio-checkbox {
-  height: 2rem;
 }
 
 @keyframes moveInLeft {
@@ -163,67 +160,32 @@ button:hover {
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
-@media screen and (max-width: 920px) {
+@media (max-width: 75em) {
   html {
-    font-size: 91.75%;
+    font-size: 73.75%;
   }
-  body {
-    height: 100vh;
-    background-attachment: unset;
+}
+
+@media (max-width: 56.25rem) {
+  html {
+    font-size: 64%;
   }
+
   .container {
-    width: 90%;
+    width: 65%;
   }
 }
 
-@media screen and (max-width: 820px) {
-  html {
-    font-size: 90.25%;
+@media screen and (max-width: 37.5rem) {
+  .header__title {
+    font-size: 1.4rem;
   }
-}
 
-@media screen and (max-width: 780px) {
-  html {
-    font-size: 85.25%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  html {
-    font-size: 59.75%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  html {
-    font-size: 45.75%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  html {
-    font-size: 43.25%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  html {
-    font-size: 41.75%;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  html {
-    font-size: 40.25%;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  html {
-    font-size: 30.75%;
+  .header__description {
+    font-size: 1.1rem;
   }
 }
