@@ -54,7 +54,7 @@ body {
   padding: 1.3rem 0;
   background-color: rgba(35, 41, 70, 0.8);
   border-radius: 0.2rem;
-  animation: moveInBottom 3s ease-out;
+  animation: moveInBottom 2.5s ease-out;
 }
 
 .form__group {
@@ -134,7 +134,7 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-5rem);
   }
   100% {
     opacity: 1;
@@ -145,7 +145,7 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(5rem);
   }
   100% {
     opacity: 1;
