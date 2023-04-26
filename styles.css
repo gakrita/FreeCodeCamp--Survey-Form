@@ -27,46 +27,11 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  width: 50%;
-  margin: 2.3rem auto 0 auto;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.header__title {
-  font-size: 2.2rem;
-  font-weight: 400;
-  animation: moveInLeft 2.5s ease-out;
-}
-
-.header__description {
-  font-style: italic;
-  font-size: 1.2rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
-  animation: moveInRight 2.5s ease-out;
-}
-
-.form {
-  padding: 1.3rem 0;
-  background-color: rgba(35, 41, 70, 0.8);
-  border-radius: 0.2rem;
-  animation: moveInBottom 2.5s ease-out;
-}
-
-.form__group {
+.form-group {
   display: block;
   width: 85%;
   margin: 1.3rem auto 0 auto;
   font-size: 1.2rem;
-}
-
-.form__label {
-  display: block;
-  height: 2rem;
 }
 
 .highlight-text {
@@ -74,44 +39,79 @@ body {
   font-size: 1.1rem;
 }
 
-.form__input,
-.form__select,
-.form__textarea {
+.form-label {
+  display: block;
+  height: 2rem;
+}
+
+.form-input,
+.form-select,
+#form-textarea {
   width: 100%;
   min-height: 2.7rem;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
 
-.form__input,
-.form__select {
+.form-input,
+.form-select {
   border: 0.1rem solid #ced4da;
   border-radius: 4px;
   transition: box-shadow 0.15s ease-in-out;
   padding-left: 0.6rem;
 }
 
-.form__input:focus,
-.form__select:focus {
+.form-input:focus,
+.form-select:focus {
   outline: none;
   box-shadow: 0 0 0.1rem 0.1rem #0632f1;
 }
 
-.form__input[type="radio"],
-.form__input[type="checkbox"] {
+.form-input[type="radio"],
+.form-input[type="checkbox"] {
   width: 1.3rem;
   margin: 0 0.5rem 0 0;
   vertical-align: middle;
   box-shadow: none;
 }
 
-.form__textarea {
+#main {
+  width: 50%;
+  margin: 2.3rem auto 0 auto;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  animation: moveInLeft 2.5s ease-out;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
+  animation: moveInRight 2.5s ease-out;
+}
+
+#survey-form {
+  padding: 1.3rem 0;
+  background-color: rgba(35, 41, 70, 0.8);
+  border-radius: 0.2rem;
+  animation: moveInBottom 2.5s ease-out;
+}
+
+#form-textarea {
   min-height: 6.7rem;
   padding: 0.7rem 0 0 0.5rem;
   font-family: inherit;
 }
 
-.btn {
+#submit {
   display: block;
   width: 6.7rem;
   height: 2.7rem;
@@ -126,7 +126,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
+#submit:hover {
   background-color: #b8c1ec;
   color: #232946;
 }
@@ -175,17 +175,17 @@ body {
     font-size: 64%;
   }
 
-  .container {
+  #main {
     width: 65%;
   }
 }
 
 @media screen and (max-width: 37.5rem) {
-  .header__title {
+  #title {
     font-size: 1.3rem;
   }
 
-  .header__description {
+  #description {
     font-size: 1rem;
   }
 }
